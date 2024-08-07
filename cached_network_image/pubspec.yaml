@@ -12,11 +12,27 @@ environment:
   flutter: '>=3.10.0'
 
 dependencies:
-  cached_network_image_platform_interface: ^4.1.0
-  cached_network_image_web: ^1.3.0
+  cached_network_image_platform_interface:
+    git:
+      url: https://github.com/Outofscope/flutter_cached_network_image
+      path: cached_network_image_platform_interface
+      ref: main
+
+  cached_network_image_web:
+    git:
+      url: https://github.com/Outofscope/flutter_cached_network_image
+      path: cached_network_image_web
+      ref: main
+
   flutter:
     sdk: flutter
-  flutter_cache_manager: ^3.4.0
+
+  flutter_cache_manager:
+    git:
+      url: https://github.com/Outofscope/flutter_cache_manager
+      path: flutter_cache_manager
+      ref: main
+
   octo_image: ^2.1.0
 
 dev_dependencies:
